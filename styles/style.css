@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #1F2937;
+}
+
+nav{
+    color: #E5E7EB;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
