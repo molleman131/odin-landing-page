@@ -5,10 +5,32 @@ html,body{
     flex-direction: column;
     min-height: 100vh;
     font-family: Verdana, sans-serif;
-    min-height: auto;
-    min-width: 100%;
+    max-height: 100%;
+    max-width: 100%;
     overflow: auto;
+    
+    
 }
+
+*{
+    scrollbar-width:auto;
+    scrollbar-color: #E5E7EB  #1F2937;
+}
+
+*::-webkit-scrollbar{
+    width: auto;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #E5E7EB;
+  border-radius: 1em;
+  border: 4px solid #1F2937;
+}
+
+*::-webkit-scrollbar-track {
+    background: #1F2937;
+}
+
 header{
     background-color: #1F2937;
     padding: 1em 15%;
@@ -24,9 +46,9 @@ nav{
 }
 
 .logo{
-    max-width: 25%;
-    font-weight: 900;
-    color: #F9FAF8;
+    font-weight: 800;
+    font-size: 1.25em;
+    color:#F9FAF8;
 }
 
 .top{
@@ -67,20 +89,23 @@ nav{
     display: flex;
     margin-top: 3em ;
     background-color: #E5E8EB;
-    max-height: 100%;
+    max-height: 20em;
     justify-content: center;
     align-items: center;
     max-width: 80%;
     flex: 1;
+    border-radius: 0.5em;
     
 }
 
 .sign-up{
     background-color: #3882F6;
     color: #F9FAF8;
-    padding: .5em 5%;
+    padding: 0.5em 5%;
     border-radius: .5em;
-    
+    border: none;
+    font-weight: bold;
+    font-size: 0.90em;
 }
 
 .content{
@@ -207,6 +232,7 @@ nav{
     color: #f9faf8;
     font-weight: bold;
     font-size: 1em;
+    border: #f9faf8 0.15em solid;
     
 }
 
