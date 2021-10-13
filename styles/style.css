@@ -265,3 +265,16 @@ ul{
     gap: 2em;
 }
 
+a{
+    text-decoration: none;
+    color: #E5E8EB;
+}
+
+a:hover{
+    color: white;
+}
+
+button:hover{
+    color: #1F2937;
+
+}
