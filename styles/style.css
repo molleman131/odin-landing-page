@@ -1,28 +1,41 @@
 
-body{
+html,body{
     margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     font-family: Verdana, sans-serif;
+    min-height: auto;
+    min-width: 100%;
+    overflow: auto;
 }
-
 header{
     background-color: #1F2937;
-    padding: 16px 5em;
+    padding: 1em 15%;
+    display: flex;
+    
 }
 
 nav{
     color: #E5E7EB;
     display: flex;
+    flex: 1;
+    
+}
+
+.logo{
+    max-width: 25%;
+    font-weight: 900;
+    color: #F9FAF8;
 }
 
 .top{
     background: #1F2937;
-    padding: 8em 5em;
+    padding: 8em 15%;
     display: flex;
-    border: dotted;
-    flex: 1
+    gap: 5em;
+    flex-shrink: 0;
+    
     
 }
 
@@ -30,43 +43,94 @@ nav{
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
+    
 }
 
 .text-top{
-    padding: 32px 0px;
+    padding: 2em 0px;
     flex-wrap: wrap;
     color: #E5E8EB;
+    max-width: 39%;
+    font-size: 18px;
+    display: flex;
+    gap: 1em
     
 }
 
 .img-top{
     display: flex;
     justify-content: flex-end;
-    width: 50%;
+    flex:0 1 100%;
 }
 
 .head-img{
     display: flex;
     margin-top: 3em ;
     background-color: #E5E8EB;
-    height: 25em;
-    width: 50em;
+    max-height: 100%;
     justify-content: center;
     align-items: center;
-    flex: 0 0 
+    max-width: 80%;
+    flex: 1;
+    
+}
+
+.sign-up{
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: .5em 5%;
+    border-radius: 8px;
+    
 }
 
 .content{
-    padding: 32px 10em;
-    
+    padding: 2em 10em;
+    display: flex;
+    flex-direction: column;
+    gap: 10em;
+    padding: 8em 15%;
 }
 
 
 .links{
     display: flex;
-    flex: 1;
     justify-content: flex-end;
+    margin-left: 50%;
+    flex:1;
+   
+   
+}
+
+.mid1{
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    align-items: center;
+}
+
+.info{
+    color: #1F2937;
+    align-self: center;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.img{
+    border: #3882F6 .25em solid;
+    display: flex;
+    width: 10em;
+    height: 10em;
+    border-radius: .5em;
+    justify-content: center;
+    align-items: center;
     
+}
+
+.subtext{
+    margin-top: 1em;
+    color: grey;
+    text-align: center;
+    width: 10.5em;
 }
 
 
@@ -76,5 +140,5 @@ ul{
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 32px;
+    gap: 2em;
 }
